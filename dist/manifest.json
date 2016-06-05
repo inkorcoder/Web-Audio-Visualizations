@@ -1,0 +1,25 @@
+{
+	"name": "VK",
+	"description": "vk styler",
+	"version": "0.0.1.109",
+	"background_page": "background.html",
+	"permissions": ["tabs", "bookmarks"],
+	"icons": {
+	 "128": "icon.png",
+	 "19":"icon.png"
+	},
+	"content_scripts": [
+		 {
+				"matches":    ["http://vk.com/*","https://vk.com/*"],
+				"css":        ["css/skin.min.css"],
+				"js":         [
+					"js/d3.min.js",
+					"js/main.min.js"
+				]
+		 }
+	],
+	"web_accessible_resources": [
+			"/*"
+		],
+	"manifest_version": 2
+ }
